@@ -32,19 +32,19 @@ class App extends Component {
 
   renderLocationComponent = () => {
     switch (this.state.location) {
-      case 'base camp garden':
-        return <BaseCampGarden />
-      case 'misty lake':
-        return <MistyLake />
-      case 'lookout point':
-        return <LookoutPoint />
-      case 'abandoned temple':
-        return <AbandonedTemple />
-      default: return (<div>No location specified</div>)
+    case 'base camp garden':
+      return <BaseCampGarden />
+    case 'misty lake':
+      return <MistyLake />
+    case 'lookout point':
+      return <LookoutPoint />
+    case 'abandoned temple':
+      return <AbandonedTemple />
+    default: return (<div>No location specified</div>)
     }
   }
 
-  render() {
+  render () {
     return (
       <div>
         <h1>Mission Page</h1>
@@ -68,7 +68,7 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  items: state
+  items: state,
 })
 
 export default connect(mapStateToProps)(App)
